@@ -117,7 +117,7 @@ main p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.border img {
+.border {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -145,6 +145,8 @@ main p {
     color: var(--text-color);
     padding: 15px;
     margin: 30px;
+    justify-content: center;
+    align-self: center;
 }
 
 .linkbutton {
@@ -160,6 +162,7 @@ main p {
 
 footer {
     display: flex;
+    justify-content: space-between;
     background-color: var(--primary-color);
     gap: 80px;
     padding: 20px;
@@ -173,7 +176,6 @@ footer p {
 
 footer a {
     background-color: var(--box-color);
-    justify-self: center;
     align-self: center;
     padding: 10px 30px 10px 30px;
     color: var(--link-color);
@@ -212,5 +214,101 @@ footer a {
     padding: 10px 25px 10px 25px;
     font-size: 18px;
     font-style: italic;
+}
+}
+
+@media (min-width: 580px){
+
+.heads {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_img {
+    width: 50%;
+}
+
+.textbox {
+    align-self: center;
+    text-align: center;
+    padding-left: 60px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.image_box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main h2 {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+main p {
+    font-size: 18px;
+    
+    padding: 0% 15% 0% 15%;
+}
+
+.border_div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--box-color);
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+}
+
+.border {
+    width: 30%;
+}
+
+.ending {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ending img {
+    grid-column: 3/5;
+    width: 40%;
+    justify-self: center;
+    margin-bottom: 40px;
+}
+
+.ending_text {
+    padding: 30px;
+    margin-left: 30%;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-self: center;
+}
+
+.linkbutton {
+    margin-left: 5px;
+}
+
+footer {
+    padding: 50px;
+}
+
+footer p {
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+footer a {
+    margin-right: 15%;
+}
+
+.small_box p {
+    font-size: 26px;
+}
+
+nav a {
+    font-size: 22px;
+    padding: 20px;
+}
+
+nav li {
+    padding: 5px;
 }
 }
